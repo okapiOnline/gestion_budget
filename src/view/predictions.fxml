@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PredictionsController">
+   <children>
+      <Button fx:id="acceuil" layoutY="46.0" mnemonicParsing="false" onAction="#goToAcceuil" prefHeight="25.0" prefWidth="143.0" text="Accueil" />
+      <Button fx:id="transactions" layoutY="79.0" mnemonicParsing="false" onAction="#goToTransaction" prefHeight="25.0" prefWidth="143.0" text="Transactions" />
+      <Button fx:id="statistiques" layoutY="112.0" mnemonicParsing="false" onAction="#goToStatistiques" prefHeight="25.0" prefWidth="143.0" text="Statistiques" />
+      <Button fx:id="predictions" layoutY="145.0" mnemonicParsing="false" onAction="#goToPrediction" prefHeight="25.0" prefWidth="143.0" text="Prédictions" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#122540" height="393.0" layoutX="143.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" width="554.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+      <Label layoutX="328.0" layoutY="371.0" prefHeight="17.0" prefWidth="254.0" text="Prédictions des dépenses" />
+      <Label layoutX="452.0" layoutY="348.0" prefHeight="17.0" prefWidth="143.0" />
+      <LineChart fx:id="prediction" layoutX="176.0" layoutY="46.0" prefHeight="323.0" prefWidth="430.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" minorTickVisible="false" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

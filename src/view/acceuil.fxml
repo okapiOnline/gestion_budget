@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AcceuilController">
+   <children>
+      <Button fx:id="acceuil" layoutY="46.0" mnemonicParsing="false" onAction="#goToAcceuil" prefHeight="25.0" prefWidth="143.0" text="Accueil" />
+      <Button fx:id="transactions" layoutY="79.0" mnemonicParsing="false" onAction="#goToTransaction" prefHeight="25.0" prefWidth="143.0" text="Transactions" />
+      <Button fx:id="statistiques" layoutY="112.0" mnemonicParsing="false" onAction="#goToStatistiques" prefHeight="25.0" prefWidth="143.0" text="Statistiques" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#122540" height="393.0" layoutX="143.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" width="554.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+      <Label layoutX="438.0" layoutY="29.0" prefHeight="17.0" prefWidth="101.0" text="Budget actuel: " textFill="WHITE" />
+      <Label fx:id="budget" layoutX="560.0" layoutY="29.0" prefHeight="17.0" prefWidth="124.0" text="\$$$$" textFill="WHITE" />
+      <Label layoutX="161.0" layoutY="60.0" prefHeight="17.0" prefWidth="167.0" text="Moyenne des dépenses " />
+      <Label layoutX="178.0" layoutY="107.0" prefHeight="17.0" prefWidth="167.0" text="Total annuel: " />
+      <Label fx:id="moyenneAnnuelleDepense" layoutX="359.0" layoutY="106.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+      <Label layoutX="178.0" layoutY="127.0" prefHeight="17.0" prefWidth="143.0" text="Moyenne mensuelle: " />
+      <Label fx:id="moyenneMensuelleDepense" layoutX="360.0" layoutY="126.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+      <Label layoutX="178.0" layoutY="147.0" prefHeight="17.0" prefWidth="167.0" text="Moyenne hebdomadaire:" />
+      <Label fx:id="moyenneHebdomadaireDepense" layoutX="361.0" layoutY="146.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+
+      
+      <Line endX="382.0" endY="-18.0" layoutX="315.0" layoutY="88.0" startX="13.0" startY="-18.0" stroke="WHITE" />
+      <Label layoutX="154.0" layoutY="170.0" prefHeight="17.0" prefWidth="143.0" text="  Moyenne des gains" />
+      <Line endX="381.0" endY="-18.0" layoutX="316.0" layoutY="198.0" startX="-9.0" startY="-18.0" stroke="WHITE" />
+      <Label layoutX="179.0" layoutY="193.0" prefHeight="17.0" prefWidth="143.0" text="Total annuel:" />
+      <Label fx:id="moyenneAnnuelleGains" layoutX="360.0" layoutY="190.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+      
+      <Label layoutX="179.0" layoutY="215.0" prefHeight="17.0" prefWidth="143.0" text="Moyenne mensuelle:" />
+      <Label fx:id="moyenneMensuelleGains" layoutX="360.0" layoutY="215.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+      <Label layoutX="178.0" layoutY="237.0" prefHeight="17.0" prefWidth="167.0" text="Moyenne hebdomadaire:" />
+      <Label fx:id="moyenneHebdomadaireGains" layoutX="360.0" layoutY="238.0" prefHeight="17.0" prefWidth="143.0" text="\$$$$" textFill="WHITE" />
+      <Label layoutX="160.0" layoutY="277.0" prefHeight="17.0" prefWidth="234.0" text="Personnes ayant le plus dépensé " />
+      <Line endX="379.0" endY="-18.0" layoutX="318.0" layoutY="306.0" startX="70.0" startY="-18.0" stroke="WHITE" />
+      <Label layoutX="180.0" layoutY="302.0" prefHeight="17.0" prefWidth="76.0" text="1-  " />
+      <Label fx:id="personne1" layoutX="204.0" layoutY="303.0" prefHeight="17.0" prefWidth="204.0" text=" " textFill="WHITE" />
+  
+      <Label layoutX="180.0" layoutY="321.0" prefHeight="17.0" prefWidth="51.0" text="2- " />
+      <Label fx:id="personne2" layoutX="204.0" layoutY="324.0" prefHeight="17.0" prefWidth="217.0" text=" " textFill="WHITE" />
+      
+      <Label layoutX="180.0" layoutY="343.0" prefHeight="17.0" prefWidth="59.0" text="3- " />
+      <Label fx:id="personne3" layoutX="205.0" layoutY="343.0" prefHeight="17.0" prefWidth="224.0" text=" " textFill="WHITE" />
+      
+      <ComboBox fx:id="annee" layoutX="245.0" layoutY="17.0" onAction="#getyear" prefHeight="25.0" prefWidth="118.0" />
+      <Label layoutX="161.0" layoutY="24.0" prefHeight="17.0" prefWidth="66.0" text="Année :" />
+   </children>
+</AnchorPane>

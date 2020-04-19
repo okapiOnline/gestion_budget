@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/BeniB/OneDrive/Images/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/ojdbc7_g.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-examples-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-excelant-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/hello15/lib/poi-scratchpad-4.1.2.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

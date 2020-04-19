@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="185.0" prefWidth="420.0" style="-fx-background-color: #1d1d1d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.filechooserController">
+   <children>
+      <Button fx:id="select" layoutX="251.0" layoutY="87.0" mnemonicParsing="false" onAction="#selectionnerFichier" prefHeight="25.0" prefWidth="147.0" text="Selectionner un fichier" />
+      <Label layoutX="110.0" layoutY="24.0" prefHeight="27.0" prefWidth="249.0" text="Importer des transactions" textFill="#6ecdda">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filesname" layoutX="27.0" layoutY="86.0" prefHeight="25.0" prefWidth="166.0" />
+   </children>
+</AnchorPane>
